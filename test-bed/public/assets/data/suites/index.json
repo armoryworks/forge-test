@@ -5,8 +5,8 @@
     "title": "Audit log captures every consequential state change",
     "description": "For each major state-changing action, verify the audit log records\nthe action with actor, timestamp, target record, and before/after\nstate. Tampering checks live alongside.\n",
     "estimated_total_minutes": 50,
-    "case_count": 9,
-    "planned_count": 9
+    "case_count": 40,
+    "planned_count": 40
   },
   {
     "id": "bulk-ops",
@@ -14,8 +14,8 @@
     "title": "Bulk operations beyond import",
     "description": "Mass update, mass status change, mass reassign, mass deactivate.\nEach operation must report which records succeeded, which failed,\nand why — never silent partial outcomes.\n",
     "estimated_total_minutes": 40,
-    "case_count": 4,
-    "planned_count": 4
+    "case_count": 30,
+    "planned_count": 30
   },
   {
     "id": "concurrency",
@@ -31,18 +31,18 @@
     "directory": "documents",
     "title": "Document generation, email, print, and attach",
     "description": "Verify each canonical business document generates correctly,\nemails reliably, prints to PDF, and arbitrary files attach to\nrecords.\n",
-    "estimated_total_minutes": 35,
-    "case_count": 6,
-    "planned_count": 6
+    "estimated_total_minutes": 145,
+    "case_count": 25,
+    "planned_count": 25
   },
   {
     "id": "edge-cases",
     "directory": "edge-cases",
-    "title": "Date, currency, decimal, tax, and scale edge cases",
-    "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows. The bar is that\nthe application handles each cleanly without silent corruption.\n",
-    "estimated_total_minutes": 80,
-    "case_count": 10,
-    "planned_count": 10
+    "title": "Date, currency, decimal, tax, scale, unicode, signed-quantity, null/empty, and zero-boundary edge cases",
+    "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows, non-ASCII names,\ntime-zone-spanning shifts, negative and zero quantities, empty vs\nnull values, and permission boundaries at exactly zero. The bar is\nthat the application handles each cleanly without silent corruption.\n",
+    "estimated_total_minutes": 360,
+    "case_count": 50,
+    "planned_count": 50
   },
   {
     "id": "integrations",
@@ -59,17 +59,17 @@
     "title": "Per-entity list view UX (search, filter, sort, paginate)",
     "description": "For each major list view, verify partial search, status filter,\ndate range filter, multi-column sort, pagination at scale, and\nsaved-view persistence.\n",
     "estimated_total_minutes": 35,
-    "case_count": 6,
-    "planned_count": 6
+    "case_count": 50,
+    "planned_count": 50
   },
   {
     "id": "notifications",
     "directory": "notifications",
     "title": "Notifications and alerts fire under the right conditions",
     "description": "Verify each notification type fires when its trigger condition\nis met, surfaces in the right channel(s), and clears appropriately\nwhen the condition resolves.\n",
-    "estimated_total_minutes": 35,
-    "case_count": 5,
-    "planned_count": 5
+    "estimated_total_minutes": 195,
+    "case_count": 25,
+    "planned_count": 25
   },
   {
     "id": "permissions",

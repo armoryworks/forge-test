@@ -1,54 +1,176 @@
 {
   "id": "edge-cases",
   "directory": "edge-cases",
-  "title": "Date, currency, decimal, tax, and scale edge cases",
-  "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows. The bar is that\nthe application handles each cleanly without silent corruption.\n",
-  "estimated_total_minutes": 80,
+  "title": "Date, currency, decimal, tax, scale, unicode, signed-quantity, null/empty, and zero-boundary edge cases",
+  "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows, non-ASCII names,\ntime-zone-spanning shifts, negative and zero quantities, empty vs\nnull values, and permission boundaries at exactly zero. The bar is\nthat the application handles each cleanly without silent corruption.\n",
+  "estimated_total_minutes": 360,
   "case_ids": [
     "EDGE-DATE-FYBOUNDARY-001",
+    "EDGE-DATE-FYBOUNDARY-002",
+    "EDGE-DATE-FYBOUNDARY-003",
+    "EDGE-DATE-FYBOUNDARY-004",
     "EDGE-DATE-DST-001",
+    "EDGE-DATE-DST-002",
+    "EDGE-DATE-DST-003",
+    "EDGE-DATE-DST-004",
     "EDGE-DATE-LEAP-001",
+    "EDGE-DATE-LEAP-002",
+    "EDGE-DATE-LEAP-003",
+    "EDGE-DATE-LEAP-004",
     "EDGE-DATE-TZBOUNDARY-001",
+    "EDGE-DATE-TZSHIFT-001",
+    "EDGE-DATE-TZSHIFT-002",
+    "EDGE-DATE-TZSHIFT-003",
     "EDGE-FX-ROUNDING-001",
+    "EDGE-FX-ROUNDING-002",
+    "EDGE-FX-ROUNDING-003",
     "EDGE-FX-RATEMOVE-001",
     "EDGE-DECIMAL-PRECISION-001",
+    "EDGE-DECIMAL-PRECISION-002",
+    "EDGE-DECIMAL-PRECISION-003",
+    "EDGE-DECIMAL-PRECISION-004",
     "EDGE-TAX-RATECHANGE-001",
+    "EDGE-TAX-RATECHANGE-002",
+    "EDGE-TAX-RATECHANGE-003",
+    "EDGE-TAX-RATECHANGE-004",
     "EDGE-SCALE-LARGELIST-001",
-    "EDGE-SCALE-LARGEEXPORT-001"
+    "EDGE-SCALE-LARGELIST-002",
+    "EDGE-SCALE-LARGELIST-003",
+    "EDGE-SCALE-LARGEEXPORT-001",
+    "EDGE-SCALE-LARGEEXPORT-002",
+    "EDGE-UNICODE-NAMES-001",
+    "EDGE-UNICODE-NAMES-002",
+    "EDGE-UNICODE-NAMES-003",
+    "EDGE-UNICODE-NAMES-004",
+    "EDGE-NEGQTY-001",
+    "EDGE-NEGQTY-002",
+    "EDGE-NEGQTY-003",
+    "EDGE-ZEROQTY-001",
+    "EDGE-ZEROQTY-002",
+    "EDGE-ZEROQTY-003",
+    "EDGE-NULLEMPTY-001",
+    "EDGE-NULLEMPTY-002",
+    "EDGE-NULLEMPTY-003",
+    "EDGE-PERMZERO-001",
+    "EDGE-PERMZERO-002",
+    "EDGE-PERMZERO-003",
+    "EDGE-PERMZERO-004"
   ],
   "planned_case_ids": [
     "EDGE-DATE-FYBOUNDARY-001",
+    "EDGE-DATE-FYBOUNDARY-002",
+    "EDGE-DATE-FYBOUNDARY-003",
+    "EDGE-DATE-FYBOUNDARY-004",
     "EDGE-DATE-DST-001",
+    "EDGE-DATE-DST-002",
+    "EDGE-DATE-DST-003",
+    "EDGE-DATE-DST-004",
     "EDGE-DATE-LEAP-001",
+    "EDGE-DATE-LEAP-002",
+    "EDGE-DATE-LEAP-003",
+    "EDGE-DATE-LEAP-004",
     "EDGE-DATE-TZBOUNDARY-001",
+    "EDGE-DATE-TZSHIFT-001",
+    "EDGE-DATE-TZSHIFT-002",
+    "EDGE-DATE-TZSHIFT-003",
     "EDGE-FX-ROUNDING-001",
+    "EDGE-FX-ROUNDING-002",
+    "EDGE-FX-ROUNDING-003",
     "EDGE-FX-RATEMOVE-001",
     "EDGE-DECIMAL-PRECISION-001",
+    "EDGE-DECIMAL-PRECISION-002",
+    "EDGE-DECIMAL-PRECISION-003",
+    "EDGE-DECIMAL-PRECISION-004",
     "EDGE-TAX-RATECHANGE-001",
+    "EDGE-TAX-RATECHANGE-002",
+    "EDGE-TAX-RATECHANGE-003",
+    "EDGE-TAX-RATECHANGE-004",
     "EDGE-SCALE-LARGELIST-001",
-    "EDGE-SCALE-LARGEEXPORT-001"
+    "EDGE-SCALE-LARGELIST-002",
+    "EDGE-SCALE-LARGELIST-003",
+    "EDGE-SCALE-LARGEEXPORT-001",
+    "EDGE-SCALE-LARGEEXPORT-002",
+    "EDGE-UNICODE-NAMES-001",
+    "EDGE-UNICODE-NAMES-002",
+    "EDGE-UNICODE-NAMES-003",
+    "EDGE-UNICODE-NAMES-004",
+    "EDGE-NEGQTY-001",
+    "EDGE-NEGQTY-002",
+    "EDGE-NEGQTY-003",
+    "EDGE-ZEROQTY-001",
+    "EDGE-ZEROQTY-002",
+    "EDGE-ZEROQTY-003",
+    "EDGE-NULLEMPTY-001",
+    "EDGE-NULLEMPTY-002",
+    "EDGE-NULLEMPTY-003",
+    "EDGE-PERMZERO-001",
+    "EDGE-PERMZERO-002",
+    "EDGE-PERMZERO-003",
+    "EDGE-PERMZERO-004"
   ],
   "missing_case_ids": [],
   "raw": {
     "suite": "edge-cases",
-    "title": "Date, currency, decimal, tax, and scale edge cases",
-    "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows. The bar is that\nthe application handles each cleanly without silent corruption.\n",
-    "estimated_total_minutes": 80,
+    "title": "Date, currency, decimal, tax, scale, unicode, signed-quantity, null/empty, and zero-boundary edge cases",
+    "description": "Bugs that surface only at boundaries: fiscal year end, DST, leap\nyear, decimal-precision rounding, FX rate movement, tax-rate change\nmid-period, list views over five thousand rows, non-ASCII names,\ntime-zone-spanning shifts, negative and zero quantities, empty vs\nnull values, and permission boundaries at exactly zero. The bar is\nthat the application handles each cleanly without silent corruption.\n",
+    "estimated_total_minutes": 360,
     "cases": [
       {
         "id": "EDGE-DATE-FYBOUNDARY-001"
       },
       {
+        "id": "EDGE-DATE-FYBOUNDARY-002"
+      },
+      {
+        "id": "EDGE-DATE-FYBOUNDARY-003"
+      },
+      {
+        "id": "EDGE-DATE-FYBOUNDARY-004"
+      },
+      {
         "id": "EDGE-DATE-DST-001"
+      },
+      {
+        "id": "EDGE-DATE-DST-002"
+      },
+      {
+        "id": "EDGE-DATE-DST-003"
+      },
+      {
+        "id": "EDGE-DATE-DST-004"
       },
       {
         "id": "EDGE-DATE-LEAP-001"
       },
       {
+        "id": "EDGE-DATE-LEAP-002"
+      },
+      {
+        "id": "EDGE-DATE-LEAP-003"
+      },
+      {
+        "id": "EDGE-DATE-LEAP-004"
+      },
+      {
         "id": "EDGE-DATE-TZBOUNDARY-001"
       },
       {
+        "id": "EDGE-DATE-TZSHIFT-001"
+      },
+      {
+        "id": "EDGE-DATE-TZSHIFT-002"
+      },
+      {
+        "id": "EDGE-DATE-TZSHIFT-003"
+      },
+      {
         "id": "EDGE-FX-ROUNDING-001"
+      },
+      {
+        "id": "EDGE-FX-ROUNDING-002"
+      },
+      {
+        "id": "EDGE-FX-ROUNDING-003"
       },
       {
         "id": "EDGE-FX-RATEMOVE-001"
@@ -57,13 +179,91 @@
         "id": "EDGE-DECIMAL-PRECISION-001"
       },
       {
+        "id": "EDGE-DECIMAL-PRECISION-002"
+      },
+      {
+        "id": "EDGE-DECIMAL-PRECISION-003"
+      },
+      {
+        "id": "EDGE-DECIMAL-PRECISION-004"
+      },
+      {
         "id": "EDGE-TAX-RATECHANGE-001"
+      },
+      {
+        "id": "EDGE-TAX-RATECHANGE-002"
+      },
+      {
+        "id": "EDGE-TAX-RATECHANGE-003"
+      },
+      {
+        "id": "EDGE-TAX-RATECHANGE-004"
       },
       {
         "id": "EDGE-SCALE-LARGELIST-001"
       },
       {
+        "id": "EDGE-SCALE-LARGELIST-002"
+      },
+      {
+        "id": "EDGE-SCALE-LARGELIST-003"
+      },
+      {
         "id": "EDGE-SCALE-LARGEEXPORT-001"
+      },
+      {
+        "id": "EDGE-SCALE-LARGEEXPORT-002"
+      },
+      {
+        "id": "EDGE-UNICODE-NAMES-001"
+      },
+      {
+        "id": "EDGE-UNICODE-NAMES-002"
+      },
+      {
+        "id": "EDGE-UNICODE-NAMES-003"
+      },
+      {
+        "id": "EDGE-UNICODE-NAMES-004"
+      },
+      {
+        "id": "EDGE-NEGQTY-001"
+      },
+      {
+        "id": "EDGE-NEGQTY-002"
+      },
+      {
+        "id": "EDGE-NEGQTY-003"
+      },
+      {
+        "id": "EDGE-ZEROQTY-001"
+      },
+      {
+        "id": "EDGE-ZEROQTY-002"
+      },
+      {
+        "id": "EDGE-ZEROQTY-003"
+      },
+      {
+        "id": "EDGE-NULLEMPTY-001"
+      },
+      {
+        "id": "EDGE-NULLEMPTY-002"
+      },
+      {
+        "id": "EDGE-NULLEMPTY-003"
+      },
+      {
+        "id": "EDGE-PERMZERO-001"
+      },
+      {
+        "id": "EDGE-PERMZERO-002"
+      },
+      {
+        "id": "EDGE-PERMZERO-003"
+      },
+      {
+        "id": "EDGE-PERMZERO-004"
       }
     ],
     "completion_criteria": [

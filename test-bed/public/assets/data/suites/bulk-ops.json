@@ -8,13 +8,65 @@
     "BULK-VENDOR-TERMS-001",
     "BULK-WO-CLOSE-001",
     "BULK-CUST-REASSIGN-001",
-    "BULK-CUST-DEACT-001"
+    "BULK-CUST-DEACT-001",
+    "BULK-PART-PRICE-001",
+    "BULK-PART-LEAD-001",
+    "BULK-CUST-TERMS-001",
+    "BULK-PART-COST-001",
+    "BULK-BOM-EFFDATE-001",
+    "BULK-PART-DEACT-001",
+    "BULK-EMP-DEACT-001",
+    "BULK-CONTRACT-EXPIRE-001",
+    "BULK-PART-OBSOLETE-001",
+    "BULK-QUOTE-DELETE-001",
+    "BULK-PO-DRAFT-DELETE-001",
+    "BULK-ATTACH-PURGE-001",
+    "BULK-FORECAST-DELETE-001",
+    "BULK-WO-WORKCENTER-001",
+    "BULK-PO-BUYER-001",
+    "BULK-INV-LOCATION-001",
+    "BULK-OPP-SALESREP-001",
+    "BULK-ASSET-CUSTODIAN-001",
+    "BULK-IMPORT-CUST-ERR-001",
+    "BULK-IMPORT-PART-DUP-001",
+    "BULK-IMPORT-VENDOR-VAL-001",
+    "BULK-IMPORT-PARTIAL-001",
+    "BULK-EXPORT-AR-FILTER-001",
+    "BULK-EXPORT-INV-LOC-001",
+    "BULK-EXPORT-WO-DATE-001",
+    "BULK-EXPORT-PII-001"
   ],
   "planned_case_ids": [
     "BULK-VENDOR-TERMS-001",
     "BULK-WO-CLOSE-001",
     "BULK-CUST-REASSIGN-001",
-    "BULK-CUST-DEACT-001"
+    "BULK-CUST-DEACT-001",
+    "BULK-PART-PRICE-001",
+    "BULK-PART-LEAD-001",
+    "BULK-CUST-TERMS-001",
+    "BULK-PART-COST-001",
+    "BULK-BOM-EFFDATE-001",
+    "BULK-PART-DEACT-001",
+    "BULK-EMP-DEACT-001",
+    "BULK-CONTRACT-EXPIRE-001",
+    "BULK-PART-OBSOLETE-001",
+    "BULK-QUOTE-DELETE-001",
+    "BULK-PO-DRAFT-DELETE-001",
+    "BULK-ATTACH-PURGE-001",
+    "BULK-FORECAST-DELETE-001",
+    "BULK-WO-WORKCENTER-001",
+    "BULK-PO-BUYER-001",
+    "BULK-INV-LOCATION-001",
+    "BULK-OPP-SALESREP-001",
+    "BULK-ASSET-CUSTODIAN-001",
+    "BULK-IMPORT-CUST-ERR-001",
+    "BULK-IMPORT-PART-DUP-001",
+    "BULK-IMPORT-VENDOR-VAL-001",
+    "BULK-IMPORT-PARTIAL-001",
+    "BULK-EXPORT-AR-FILTER-001",
+    "BULK-EXPORT-INV-LOC-001",
+    "BULK-EXPORT-WO-DATE-001",
+    "BULK-EXPORT-PII-001"
   ],
   "missing_case_ids": [],
   "raw": {
@@ -34,6 +86,84 @@
       },
       {
         "id": "BULK-CUST-DEACT-001"
+      },
+      {
+        "id": "BULK-PART-PRICE-001"
+      },
+      {
+        "id": "BULK-PART-LEAD-001"
+      },
+      {
+        "id": "BULK-CUST-TERMS-001"
+      },
+      {
+        "id": "BULK-PART-COST-001"
+      },
+      {
+        "id": "BULK-BOM-EFFDATE-001"
+      },
+      {
+        "id": "BULK-PART-DEACT-001"
+      },
+      {
+        "id": "BULK-EMP-DEACT-001"
+      },
+      {
+        "id": "BULK-CONTRACT-EXPIRE-001"
+      },
+      {
+        "id": "BULK-PART-OBSOLETE-001"
+      },
+      {
+        "id": "BULK-QUOTE-DELETE-001"
+      },
+      {
+        "id": "BULK-PO-DRAFT-DELETE-001"
+      },
+      {
+        "id": "BULK-ATTACH-PURGE-001"
+      },
+      {
+        "id": "BULK-FORECAST-DELETE-001"
+      },
+      {
+        "id": "BULK-WO-WORKCENTER-001"
+      },
+      {
+        "id": "BULK-PO-BUYER-001"
+      },
+      {
+        "id": "BULK-INV-LOCATION-001"
+      },
+      {
+        "id": "BULK-OPP-SALESREP-001"
+      },
+      {
+        "id": "BULK-ASSET-CUSTODIAN-001"
+      },
+      {
+        "id": "BULK-IMPORT-CUST-ERR-001"
+      },
+      {
+        "id": "BULK-IMPORT-PART-DUP-001"
+      },
+      {
+        "id": "BULK-IMPORT-VENDOR-VAL-001"
+      },
+      {
+        "id": "BULK-IMPORT-PARTIAL-001"
+      },
+      {
+        "id": "BULK-EXPORT-AR-FILTER-001"
+      },
+      {
+        "id": "BULK-EXPORT-INV-LOC-001"
+      },
+      {
+        "id": "BULK-EXPORT-WO-DATE-001"
+      },
+      {
+        "id": "BULK-EXPORT-PII-001"
       }
     ],
     "completion_criteria": [

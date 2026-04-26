@@ -3,42 +3,142 @@
   "directory": "notifications",
   "title": "Notifications and alerts fire under the right conditions",
   "description": "Verify each notification type fires when its trigger condition\nis met, surfaces in the right channel(s), and clears appropriately\nwhen the condition resolves.\n",
-  "estimated_total_minutes": 35,
+  "estimated_total_minutes": 195,
   "case_ids": [
     "NOTIF-LOWSTOCK-001",
+    "NOTIF-LOWSTOCK-002",
+    "NOTIF-LOWSTOCK-003",
     "NOTIF-PO-OVERDUE-001",
+    "NOTIF-PO-OVERDUE-002",
+    "NOTIF-PO-OVERDUE-003",
     "NOTIF-PM-OVERDUE-001",
+    "NOTIF-PM-OVERDUE-002",
+    "NOTIF-PM-OVERDUE-003",
     "NOTIF-AR-AGING-001",
-    "NOTIF-APPROVAL-001"
+    "NOTIF-AR-AGING-002",
+    "NOTIF-AR-AGING-003",
+    "NOTIF-APPROVAL-001",
+    "NOTIF-APPROVAL-002",
+    "NOTIF-APPROVAL-003",
+    "NOTIF-CREDIT-LIMIT-001",
+    "NOTIF-CREDIT-LIMIT-002",
+    "NOTIF-PERIOD-CLOSE-001",
+    "NOTIF-PERIOD-CLOSE-002",
+    "NOTIF-INTEGRATION-FAIL-001",
+    "NOTIF-INTEGRATION-FAIL-002",
+    "NOTIF-STOCKOUT-001",
+    "NOTIF-STOCKOUT-002",
+    "NOTIF-WO-BEHIND-001",
+    "NOTIF-WO-BEHIND-002"
   ],
   "planned_case_ids": [
     "NOTIF-LOWSTOCK-001",
+    "NOTIF-LOWSTOCK-002",
+    "NOTIF-LOWSTOCK-003",
     "NOTIF-PO-OVERDUE-001",
+    "NOTIF-PO-OVERDUE-002",
+    "NOTIF-PO-OVERDUE-003",
     "NOTIF-PM-OVERDUE-001",
+    "NOTIF-PM-OVERDUE-002",
+    "NOTIF-PM-OVERDUE-003",
     "NOTIF-AR-AGING-001",
-    "NOTIF-APPROVAL-001"
+    "NOTIF-AR-AGING-002",
+    "NOTIF-AR-AGING-003",
+    "NOTIF-APPROVAL-001",
+    "NOTIF-APPROVAL-002",
+    "NOTIF-APPROVAL-003",
+    "NOTIF-CREDIT-LIMIT-001",
+    "NOTIF-CREDIT-LIMIT-002",
+    "NOTIF-PERIOD-CLOSE-001",
+    "NOTIF-PERIOD-CLOSE-002",
+    "NOTIF-INTEGRATION-FAIL-001",
+    "NOTIF-INTEGRATION-FAIL-002",
+    "NOTIF-STOCKOUT-001",
+    "NOTIF-STOCKOUT-002",
+    "NOTIF-WO-BEHIND-001",
+    "NOTIF-WO-BEHIND-002"
   ],
   "missing_case_ids": [],
   "raw": {
     "suite": "notifications",
     "title": "Notifications and alerts fire under the right conditions",
     "description": "Verify each notification type fires when its trigger condition\nis met, surfaces in the right channel(s), and clears appropriately\nwhen the condition resolves.\n",
-    "estimated_total_minutes": 35,
+    "estimated_total_minutes": 195,
     "cases": [
       {
         "id": "NOTIF-LOWSTOCK-001"
       },
       {
+        "id": "NOTIF-LOWSTOCK-002"
+      },
+      {
+        "id": "NOTIF-LOWSTOCK-003"
+      },
+      {
         "id": "NOTIF-PO-OVERDUE-001"
+      },
+      {
+        "id": "NOTIF-PO-OVERDUE-002"
+      },
+      {
+        "id": "NOTIF-PO-OVERDUE-003"
       },
       {
         "id": "NOTIF-PM-OVERDUE-001"
       },
       {
+        "id": "NOTIF-PM-OVERDUE-002"
+      },
+      {
+        "id": "NOTIF-PM-OVERDUE-003"
+      },
+      {
         "id": "NOTIF-AR-AGING-001"
       },
       {
+        "id": "NOTIF-AR-AGING-002"
+      },
+      {
+        "id": "NOTIF-AR-AGING-003"
+      },
+      {
         "id": "NOTIF-APPROVAL-001"
+      },
+      {
+        "id": "NOTIF-APPROVAL-002"
+      },
+      {
+        "id": "NOTIF-APPROVAL-003"
+      },
+      {
+        "id": "NOTIF-CREDIT-LIMIT-001"
+      },
+      {
+        "id": "NOTIF-CREDIT-LIMIT-002"
+      },
+      {
+        "id": "NOTIF-PERIOD-CLOSE-001"
+      },
+      {
+        "id": "NOTIF-PERIOD-CLOSE-002"
+      },
+      {
+        "id": "NOTIF-INTEGRATION-FAIL-001"
+      },
+      {
+        "id": "NOTIF-INTEGRATION-FAIL-002"
+      },
+      {
+        "id": "NOTIF-STOCKOUT-001"
+      },
+      {
+        "id": "NOTIF-STOCKOUT-002"
+      },
+      {
+        "id": "NOTIF-WO-BEHIND-001"
+      },
+      {
+        "id": "NOTIF-WO-BEHIND-002"
       }
     ],
     "completion_criteria": [

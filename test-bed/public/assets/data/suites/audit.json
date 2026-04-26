@@ -13,7 +13,38 @@
     "AUDIT-PRICE-OVR-001",
     "AUDIT-PERMS-CHG-001",
     "AUDIT-DEACT-001",
-    "AUDIT-IMMUTABLE-001"
+    "AUDIT-IMMUTABLE-001",
+    "AUDIT-CUST-CREATE-001",
+    "AUDIT-CUST-UPDATE-001",
+    "AUDIT-CUST-DEACT-001",
+    "AUDIT-VEND-CREATE-001",
+    "AUDIT-VEND-UPDATE-001",
+    "AUDIT-PART-CREATE-001",
+    "AUDIT-PART-UPDATE-001",
+    "AUDIT-PART-DEACT-001",
+    "AUDIT-BOM-CREATE-001",
+    "AUDIT-PO-CREATE-001",
+    "AUDIT-PO-CLOSE-001",
+    "AUDIT-PO-CANCEL-001",
+    "AUDIT-RECEIPT-001",
+    "AUDIT-SO-CREATE-001",
+    "AUDIT-SO-UPDATE-001",
+    "AUDIT-SO-CANCEL-001",
+    "AUDIT-WO-CREATE-001",
+    "AUDIT-WO-STATUS-001",
+    "AUDIT-WO-COMPLETE-001",
+    "AUDIT-INV-POST-001",
+    "AUDIT-INV-VOID-001",
+    "AUDIT-PAY-APPLY-001",
+    "AUDIT-PAY-REVERSE-001",
+    "AUDIT-EMP-CREATE-001",
+    "AUDIT-EMP-TERM-001",
+    "AUDIT-ROLE-BULK-001",
+    "AUDIT-JE-CREATE-001",
+    "AUDIT-JE-POST-001",
+    "AUDIT-JE-REVERSE-001",
+    "AUDIT-CREDIT-LIMIT-001",
+    "AUDIT-COST-CHANGE-001"
   ],
   "planned_case_ids": [
     "AUDIT-LOGIN-001",
@@ -24,7 +55,38 @@
     "AUDIT-PRICE-OVR-001",
     "AUDIT-PERMS-CHG-001",
     "AUDIT-DEACT-001",
-    "AUDIT-IMMUTABLE-001"
+    "AUDIT-IMMUTABLE-001",
+    "AUDIT-CUST-CREATE-001",
+    "AUDIT-CUST-UPDATE-001",
+    "AUDIT-CUST-DEACT-001",
+    "AUDIT-VEND-CREATE-001",
+    "AUDIT-VEND-UPDATE-001",
+    "AUDIT-PART-CREATE-001",
+    "AUDIT-PART-UPDATE-001",
+    "AUDIT-PART-DEACT-001",
+    "AUDIT-BOM-CREATE-001",
+    "AUDIT-PO-CREATE-001",
+    "AUDIT-PO-CLOSE-001",
+    "AUDIT-PO-CANCEL-001",
+    "AUDIT-RECEIPT-001",
+    "AUDIT-SO-CREATE-001",
+    "AUDIT-SO-UPDATE-001",
+    "AUDIT-SO-CANCEL-001",
+    "AUDIT-WO-CREATE-001",
+    "AUDIT-WO-STATUS-001",
+    "AUDIT-WO-COMPLETE-001",
+    "AUDIT-INV-POST-001",
+    "AUDIT-INV-VOID-001",
+    "AUDIT-PAY-APPLY-001",
+    "AUDIT-PAY-REVERSE-001",
+    "AUDIT-EMP-CREATE-001",
+    "AUDIT-EMP-TERM-001",
+    "AUDIT-ROLE-BULK-001",
+    "AUDIT-JE-CREATE-001",
+    "AUDIT-JE-POST-001",
+    "AUDIT-JE-REVERSE-001",
+    "AUDIT-CREDIT-LIMIT-001",
+    "AUDIT-COST-CHANGE-001"
   ],
   "missing_case_ids": [],
   "raw": {
@@ -59,6 +121,99 @@
       },
       {
         "id": "AUDIT-IMMUTABLE-001"
+      },
+      {
+        "id": "AUDIT-CUST-CREATE-001"
+      },
+      {
+        "id": "AUDIT-CUST-UPDATE-001"
+      },
+      {
+        "id": "AUDIT-CUST-DEACT-001"
+      },
+      {
+        "id": "AUDIT-VEND-CREATE-001"
+      },
+      {
+        "id": "AUDIT-VEND-UPDATE-001"
+      },
+      {
+        "id": "AUDIT-PART-CREATE-001"
+      },
+      {
+        "id": "AUDIT-PART-UPDATE-001"
+      },
+      {
+        "id": "AUDIT-PART-DEACT-001"
+      },
+      {
+        "id": "AUDIT-BOM-CREATE-001"
+      },
+      {
+        "id": "AUDIT-PO-CREATE-001"
+      },
+      {
+        "id": "AUDIT-PO-CLOSE-001"
+      },
+      {
+        "id": "AUDIT-PO-CANCEL-001"
+      },
+      {
+        "id": "AUDIT-RECEIPT-001"
+      },
+      {
+        "id": "AUDIT-SO-CREATE-001"
+      },
+      {
+        "id": "AUDIT-SO-UPDATE-001"
+      },
+      {
+        "id": "AUDIT-SO-CANCEL-001"
+      },
+      {
+        "id": "AUDIT-WO-CREATE-001"
+      },
+      {
+        "id": "AUDIT-WO-STATUS-001"
+      },
+      {
+        "id": "AUDIT-WO-COMPLETE-001"
+      },
+      {
+        "id": "AUDIT-INV-POST-001"
+      },
+      {
+        "id": "AUDIT-INV-VOID-001"
+      },
+      {
+        "id": "AUDIT-PAY-APPLY-001"
+      },
+      {
+        "id": "AUDIT-PAY-REVERSE-001"
+      },
+      {
+        "id": "AUDIT-EMP-CREATE-001"
+      },
+      {
+        "id": "AUDIT-EMP-TERM-001"
+      },
+      {
+        "id": "AUDIT-ROLE-BULK-001"
+      },
+      {
+        "id": "AUDIT-JE-CREATE-001"
+      },
+      {
+        "id": "AUDIT-JE-POST-001"
+      },
+      {
+        "id": "AUDIT-JE-REVERSE-001"
+      },
+      {
+        "id": "AUDIT-CREDIT-LIMIT-001"
+      },
+      {
+        "id": "AUDIT-COST-CHANGE-001"
       }
     ],
     "completion_criteria": [

@@ -6,19 +6,107 @@
   "estimated_total_minutes": 35,
   "case_ids": [
     "LIST-CUST-001",
+    "LIST-CUST-002",
+    "LIST-CUST-003",
+    "LIST-CUST-004",
+    "LIST-CUST-005",
     "LIST-VENDOR-001",
+    "LIST-VENDOR-002",
+    "LIST-VENDOR-003",
+    "LIST-VENDOR-004",
+    "LIST-VENDOR-005",
     "LIST-PART-001",
-    "LIST-WO-001",
+    "LIST-PART-002",
+    "LIST-PART-003",
+    "LIST-PART-004",
+    "LIST-PART-005",
+    "LIST-BOM-001",
+    "LIST-BOM-002",
+    "LIST-BOM-003",
+    "LIST-BOM-004",
+    "LIST-BOM-005",
     "LIST-PO-001",
-    "LIST-INV-001"
+    "LIST-PO-002",
+    "LIST-PO-003",
+    "LIST-PO-004",
+    "LIST-PO-005",
+    "LIST-SO-001",
+    "LIST-SO-002",
+    "LIST-SO-003",
+    "LIST-SO-004",
+    "LIST-SO-005",
+    "LIST-WO-001",
+    "LIST-WO-002",
+    "LIST-WO-003",
+    "LIST-WO-004",
+    "LIST-WO-005",
+    "LIST-INV-001",
+    "LIST-INV-002",
+    "LIST-INV-003",
+    "LIST-INV-004",
+    "LIST-INV-005",
+    "LIST-PAY-001",
+    "LIST-PAY-002",
+    "LIST-PAY-003",
+    "LIST-PAY-004",
+    "LIST-PAY-005",
+    "LIST-EMP-001",
+    "LIST-EMP-002",
+    "LIST-EMP-003",
+    "LIST-EMP-004",
+    "LIST-EMP-005"
   ],
   "planned_case_ids": [
     "LIST-CUST-001",
+    "LIST-CUST-002",
+    "LIST-CUST-003",
+    "LIST-CUST-004",
+    "LIST-CUST-005",
     "LIST-VENDOR-001",
+    "LIST-VENDOR-002",
+    "LIST-VENDOR-003",
+    "LIST-VENDOR-004",
+    "LIST-VENDOR-005",
     "LIST-PART-001",
-    "LIST-WO-001",
+    "LIST-PART-002",
+    "LIST-PART-003",
+    "LIST-PART-004",
+    "LIST-PART-005",
+    "LIST-BOM-001",
+    "LIST-BOM-002",
+    "LIST-BOM-003",
+    "LIST-BOM-004",
+    "LIST-BOM-005",
     "LIST-PO-001",
-    "LIST-INV-001"
+    "LIST-PO-002",
+    "LIST-PO-003",
+    "LIST-PO-004",
+    "LIST-PO-005",
+    "LIST-SO-001",
+    "LIST-SO-002",
+    "LIST-SO-003",
+    "LIST-SO-004",
+    "LIST-SO-005",
+    "LIST-WO-001",
+    "LIST-WO-002",
+    "LIST-WO-003",
+    "LIST-WO-004",
+    "LIST-WO-005",
+    "LIST-INV-001",
+    "LIST-INV-002",
+    "LIST-INV-003",
+    "LIST-INV-004",
+    "LIST-INV-005",
+    "LIST-PAY-001",
+    "LIST-PAY-002",
+    "LIST-PAY-003",
+    "LIST-PAY-004",
+    "LIST-PAY-005",
+    "LIST-EMP-001",
+    "LIST-EMP-002",
+    "LIST-EMP-003",
+    "LIST-EMP-004",
+    "LIST-EMP-005"
   ],
   "missing_case_ids": [],
   "raw": {
@@ -31,19 +119,151 @@
         "id": "LIST-CUST-001"
       },
       {
+        "id": "LIST-CUST-002"
+      },
+      {
+        "id": "LIST-CUST-003"
+      },
+      {
+        "id": "LIST-CUST-004"
+      },
+      {
+        "id": "LIST-CUST-005"
+      },
+      {
         "id": "LIST-VENDOR-001"
+      },
+      {
+        "id": "LIST-VENDOR-002"
+      },
+      {
+        "id": "LIST-VENDOR-003"
+      },
+      {
+        "id": "LIST-VENDOR-004"
+      },
+      {
+        "id": "LIST-VENDOR-005"
       },
       {
         "id": "LIST-PART-001"
       },
       {
-        "id": "LIST-WO-001"
+        "id": "LIST-PART-002"
+      },
+      {
+        "id": "LIST-PART-003"
+      },
+      {
+        "id": "LIST-PART-004"
+      },
+      {
+        "id": "LIST-PART-005"
+      },
+      {
+        "id": "LIST-BOM-001"
+      },
+      {
+        "id": "LIST-BOM-002"
+      },
+      {
+        "id": "LIST-BOM-003"
+      },
+      {
+        "id": "LIST-BOM-004"
+      },
+      {
+        "id": "LIST-BOM-005"
       },
       {
         "id": "LIST-PO-001"
       },
       {
+        "id": "LIST-PO-002"
+      },
+      {
+        "id": "LIST-PO-003"
+      },
+      {
+        "id": "LIST-PO-004"
+      },
+      {
+        "id": "LIST-PO-005"
+      },
+      {
+        "id": "LIST-SO-001"
+      },
+      {
+        "id": "LIST-SO-002"
+      },
+      {
+        "id": "LIST-SO-003"
+      },
+      {
+        "id": "LIST-SO-004"
+      },
+      {
+        "id": "LIST-SO-005"
+      },
+      {
+        "id": "LIST-WO-001"
+      },
+      {
+        "id": "LIST-WO-002"
+      },
+      {
+        "id": "LIST-WO-003"
+      },
+      {
+        "id": "LIST-WO-004"
+      },
+      {
+        "id": "LIST-WO-005"
+      },
+      {
         "id": "LIST-INV-001"
+      },
+      {
+        "id": "LIST-INV-002"
+      },
+      {
+        "id": "LIST-INV-003"
+      },
+      {
+        "id": "LIST-INV-004"
+      },
+      {
+        "id": "LIST-INV-005"
+      },
+      {
+        "id": "LIST-PAY-001"
+      },
+      {
+        "id": "LIST-PAY-002"
+      },
+      {
+        "id": "LIST-PAY-003"
+      },
+      {
+        "id": "LIST-PAY-004"
+      },
+      {
+        "id": "LIST-PAY-005"
+      },
+      {
+        "id": "LIST-EMP-001"
+      },
+      {
+        "id": "LIST-EMP-002"
+      },
+      {
+        "id": "LIST-EMP-003"
+      },
+      {
+        "id": "LIST-EMP-004"
+      },
+      {
+        "id": "LIST-EMP-005"
       }
     ],
     "completion_criteria": [

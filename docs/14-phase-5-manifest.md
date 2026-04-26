@@ -7,7 +7,7 @@ description: |
   The grey paths through the system. Each flow stands largely on its
   own; testers can run them in any order once the prior phases have
   established the foundation.
-estimated_total_minutes: 175
+estimated_total_minutes: 360
 
 default_fixture: cascade-components-mid
 
@@ -33,6 +33,38 @@ sequence:
     required: false
     prerequisite_cases:
       - P5-PM-001
+  - id: P5-PM-003
+    required: false
+    note: PM execution variance — over-budget labor hours.
+    prerequisite_cases:
+      - P5-PM-002
+  - id: P5-PM-004
+    required: false
+    note: PM cannot start because required parts are not on hand.
+    prerequisite_cases:
+      - P5-PM-001
+  - id: P5-PM-005
+    required: false
+    note: PM execution variance — parts overage.
+    prerequisite_cases:
+      - P5-PM-002
+  - id: P5-PM-006
+    required: false
+    note: PM execution finds additional unscheduled work.
+    prerequisite_cases:
+      - P5-PM-002
+  - id: P5-PM-007
+    required: false
+    note: PM aborted mid-execution due to safety lockout.
+    prerequisite_cases:
+      - P5-PM-002
+  - id: P5-PM-008
+    required: false
+    scale_tags: [mid-market, enterprise]
+    note: Asset lifetime maintenance cost roll-up.
+    prerequisite_cases:
+      - P5-PM-002
+      - P5-CLOSE-003
 
   # QC fail
   - id: P5-QC-FAIL
@@ -51,6 +83,43 @@ sequence:
       - P5-RMA-001
   - id: P5-RMA-003
     required: false
+    prerequisite_cases:
+      - P5-RMA-002
+  - id: P5-RMA-004
+    required: false
+    note: Return-to-stock disposition variant.
+    prerequisite_cases:
+      - P5-RMA-002
+  - id: P5-RMA-005
+    required: false
+    note: Rework disposition variant.
+    prerequisite_cases:
+      - P5-RMA-002
+  - id: P5-RMA-006
+    required: false
+    note: Scrap disposition variant.
+    prerequisite_cases:
+      - P5-RMA-002
+  - id: P5-RMA-007
+    required: false
+    note: Mixed dispositions across one RMA.
+    prerequisite_cases:
+      - P5-RMA-002
+  - id: P5-RMA-008
+    required: false
+    note: Disposition reversal before downstream completion.
+    prerequisite_cases:
+      - P5-RMA-004
+  - id: P5-RMA-009
+    required: false
+    scale_tags: [mid-market, enterprise]
+    note: Refurbished-disposition flag in fulfillment.
+    prerequisite_cases:
+      - P5-RMA-005
+  - id: P5-RMA-010
+    required: false
+    scale_tags: [mid-market, enterprise]
+    note: Customer-supplied material handled separately on RMA.
     prerequisite_cases:
       - P5-RMA-002
 
@@ -170,6 +239,38 @@ sequence:
     note: Year-end close and roll to retained earnings.
     prerequisite_cases:
       - P5-CLOSE-004
+  - id: P5-CLOSE-006
+    required: false
+    note: Block backdated JE into a closed period.
+    prerequisite_cases:
+      - P5-CLOSE-004
+  - id: P5-CLOSE-007
+    required: false
+    note: Block backdated AP invoice into a closed period.
+    prerequisite_cases:
+      - P5-CLOSE-004
+  - id: P5-CLOSE-008
+    required: false
+    note: Block backdated inventory adjustment into a closed period.
+    prerequisite_cases:
+      - P5-CLOSE-004
+  - id: P5-CLOSE-009
+    required: false
+    note: Block backdated cash receipt into a closed period.
+    prerequisite_cases:
+      - P5-CLOSE-004
+      - P5-BANK-001
+  - id: P5-CLOSE-010
+    required: false
+    note: Controller override into closed period — gated and audited.
+    prerequisite_cases:
+      - P5-CLOSE-004
+  - id: P5-CLOSE-011
+    required: false
+    scale_tags: [mid-market, enterprise]
+    note: Soft close vs hard close distinction.
+    prerequisite_cases:
+      - P5-CLOSE-004
 
   # HR exception flows (added during expansion sweep)
   - id: P5-HR-TERM-001
@@ -212,6 +313,37 @@ sequence:
     note: |
       Critical for any business that has lot traceability requirements
       (food, medical, aerospace, automotive). Strongly recommended.
+  - id: P5-RECALL-001
+    required: false
+    note: Forward trace from raw lot to customer.
+    prerequisite_cases:
+      - P5-RECALL
+  - id: P5-RECALL-002
+    required: false
+    note: Backward trace from finished serial to all raw lots.
+    prerequisite_cases:
+      - P5-RECALL
+  - id: P5-RECALL-003
+    required: false
+    note: Recall notification list as immutable snapshot.
+    prerequisite_cases:
+      - P5-RECALL-001
+  - id: P5-RECALL-004
+    required: false
+    note: Forward trace covers BOM substitutions.
+    prerequisite_cases:
+      - P5-RECALL-001
+  - id: P5-RECALL-005
+    required: false
+    note: Forward / backward trace covers rework consumption.
+    prerequisite_cases:
+      - P5-RECALL-002
+      - P5-QC-FAIL
+  - id: P5-RECALL-006
+    required: false
+    note: Quarantine on-hand stock affected by a recall.
+    prerequisite_cases:
+      - P5-RECALL-001
 
   # Subcontract
   - id: P5-OFFSITE-SEND
@@ -220,6 +352,31 @@ sequence:
       - P2-ROUTE-002
   - id: P5-OFFSITE-RECV
     required: false
+    prerequisite_cases:
+      - P5-OFFSITE-SEND
+  - id: P5-OFFSITE-001
+    required: false
+    note: Lost subcontract shipment — write-off and WO restart.
+    prerequisite_cases:
+      - P5-OFFSITE-SEND
+  - id: P5-OFFSITE-002
+    required: false
+    note: Partial return from subcontractor — remainder stays offsite.
+    prerequisite_cases:
+      - P5-OFFSITE-SEND
+  - id: P5-OFFSITE-003
+    required: false
+    note: Vendor-reported scrap during subcontract processing.
+    prerequisite_cases:
+      - P5-OFFSITE-SEND
+  - id: P5-OFFSITE-004
+    required: false
+    note: Aging alert on overdue subcontract shipment.
+    prerequisite_cases:
+      - P5-OFFSITE-SEND
+  - id: P5-OFFSITE-005
+    required: false
+    note: Subcontractor returns wrong serial / lot — caught at receipt.
     prerequisite_cases:
       - P5-OFFSITE-SEND
 

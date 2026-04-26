@@ -3,21 +3,59 @@
   "directory": "documents",
   "title": "Document generation, email, print, and attach",
   "description": "Verify each canonical business document generates correctly,\nemails reliably, prints to PDF, and arbitrary files attach to\nrecords.\n",
-  "estimated_total_minutes": 35,
+  "estimated_total_minutes": 145,
   "case_ids": [
     "DOC-PO-001",
-    "DOC-INV-001",
+    "DOC-PO-002",
+    "DOC-PO-003",
+    "DOC-SOACK-001",
+    "DOC-SOACK-002",
+    "DOC-SOACK-003",
     "DOC-PACK-001",
+    "DOC-PACK-002",
+    "DOC-PACK-003",
     "DOC-BOL-001",
+    "DOC-BOL-002",
+    "DOC-BOL-003",
+    "DOC-INV-001",
+    "DOC-INV-002",
+    "DOC-INV-003",
+    "DOC-INV-004",
+    "DOC-INV-005",
     "DOC-STMT-001",
+    "DOC-STMT-002",
+    "DOC-CM-001",
+    "DOC-CM-002",
+    "DOC-CM-003",
+    "DOC-RMA-001",
+    "DOC-RMA-002",
     "DOC-ATTACH-001"
   ],
   "planned_case_ids": [
     "DOC-PO-001",
-    "DOC-INV-001",
+    "DOC-PO-002",
+    "DOC-PO-003",
+    "DOC-SOACK-001",
+    "DOC-SOACK-002",
+    "DOC-SOACK-003",
     "DOC-PACK-001",
+    "DOC-PACK-002",
+    "DOC-PACK-003",
     "DOC-BOL-001",
+    "DOC-BOL-002",
+    "DOC-BOL-003",
+    "DOC-INV-001",
+    "DOC-INV-002",
+    "DOC-INV-003",
+    "DOC-INV-004",
+    "DOC-INV-005",
     "DOC-STMT-001",
+    "DOC-STMT-002",
+    "DOC-CM-001",
+    "DOC-CM-002",
+    "DOC-CM-003",
+    "DOC-RMA-001",
+    "DOC-RMA-002",
     "DOC-ATTACH-001"
   ],
   "missing_case_ids": [],
@@ -25,22 +63,79 @@
     "suite": "documents",
     "title": "Document generation, email, print, and attach",
     "description": "Verify each canonical business document generates correctly,\nemails reliably, prints to PDF, and arbitrary files attach to\nrecords.\n",
-    "estimated_total_minutes": 35,
+    "estimated_total_minutes": 145,
     "cases": [
       {
         "id": "DOC-PO-001"
       },
       {
-        "id": "DOC-INV-001"
+        "id": "DOC-PO-002"
+      },
+      {
+        "id": "DOC-PO-003"
+      },
+      {
+        "id": "DOC-SOACK-001"
+      },
+      {
+        "id": "DOC-SOACK-002"
+      },
+      {
+        "id": "DOC-SOACK-003"
       },
       {
         "id": "DOC-PACK-001"
       },
       {
+        "id": "DOC-PACK-002"
+      },
+      {
+        "id": "DOC-PACK-003"
+      },
+      {
         "id": "DOC-BOL-001"
       },
       {
+        "id": "DOC-BOL-002"
+      },
+      {
+        "id": "DOC-BOL-003"
+      },
+      {
+        "id": "DOC-INV-001"
+      },
+      {
+        "id": "DOC-INV-002"
+      },
+      {
+        "id": "DOC-INV-003"
+      },
+      {
+        "id": "DOC-INV-004"
+      },
+      {
+        "id": "DOC-INV-005"
+      },
+      {
         "id": "DOC-STMT-001"
+      },
+      {
+        "id": "DOC-STMT-002"
+      },
+      {
+        "id": "DOC-CM-001"
+      },
+      {
+        "id": "DOC-CM-002"
+      },
+      {
+        "id": "DOC-CM-003"
+      },
+      {
+        "id": "DOC-RMA-001"
+      },
+      {
+        "id": "DOC-RMA-002"
       },
       {
         "id": "DOC-ATTACH-001"

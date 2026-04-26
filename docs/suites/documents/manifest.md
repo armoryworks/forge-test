@@ -17,14 +17,33 @@ description: |
   Verify each canonical business document generates correctly,
   emails reliably, prints to PDF, and arbitrary files attach to
   records.
-estimated_total_minutes: 35
+estimated_total_minutes: 145
 
 cases:
   - id: DOC-PO-001
-  - id: DOC-INV-001
+  - id: DOC-PO-002
+  - id: DOC-PO-003
+  - id: DOC-SOACK-001
+  - id: DOC-SOACK-002
+  - id: DOC-SOACK-003
   - id: DOC-PACK-001
+  - id: DOC-PACK-002
+  - id: DOC-PACK-003
   - id: DOC-BOL-001
+  - id: DOC-BOL-002
+  - id: DOC-BOL-003
+  - id: DOC-INV-001
+  - id: DOC-INV-002
+  - id: DOC-INV-003
+  - id: DOC-INV-004
+  - id: DOC-INV-005
   - id: DOC-STMT-001
+  - id: DOC-STMT-002
+  - id: DOC-CM-001
+  - id: DOC-CM-002
+  - id: DOC-CM-003
+  - id: DOC-RMA-001
+  - id: DOC-RMA-002
   - id: DOC-ATTACH-001
 
 completion_criteria:
