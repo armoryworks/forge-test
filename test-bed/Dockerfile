@@ -1,4 +1,4 @@
-# Multi-stage build for the qb-engineer-test SPA (test-bed Angular app).
+# Multi-stage build for the forge-test SPA (test-bed Angular app).
 #
 # Build context expectation: the repository root (one level above test-bed/).
 # That is required because the SPA's content compile step (build:content)

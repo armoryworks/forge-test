@@ -1,6 +1,6 @@
 # Library Expansion Plan
 
-The current library covers ~127 cases across Phases 0–5 plus a 6-case tutorial. That gives breadth across the canonical lifecycle but is honestly thin for an ERP at qb-engineer's intended scale. A real manufacturer-grade test library lands in the 800–1,500 case range. This document captures the categories that are underweight, with priority and rough scope estimates, so future expansion sessions don't have to re-derive the analysis.
+The current library covers ~127 cases across Phases 0–5 plus a 6-case tutorial. That gives breadth across the canonical lifecycle but is honestly thin for an ERP at forge's intended scale. A real manufacturer-grade test library lands in the 800–1,500 case range. This document captures the categories that are underweight, with priority and rough scope estimates, so future expansion sessions don't have to re-derive the analysis.
 
 Held aside, not in flight. Pick a category and act on it when ready.
 
@@ -17,7 +17,7 @@ These items are documented but not actively being authored.
 
 ### Permission matrix
 **Estimate:** +100 to +200 cases.
-**Why:** P1-USER-002 spot-checks one user's permission boundaries. A real audit needs every (role, capability) pair verified. Without this, a permission bug in qb-engineer could let any role do anything the UI doesn't actively hide — a common security failure mode.
+**Why:** P1-USER-002 spot-checks one user's permission boundaries. A real audit needs every (role, capability) pair verified. Without this, a permission bug in forge could let any role do anything the UI doesn't actively hide — a common security failure mode.
 **How to apply:** New suite under `docs/suites/permissions/`. ID convention `PERM-{ROLE}-{CAP}-NNN`. Organize as a matrix where each row is a role and each column is a capability (create-customer, post-journal-entry, release-work-order, etc.). One case per cell.
 
 ### Reports validation

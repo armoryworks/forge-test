@@ -1,4 +1,4 @@
-# qb-engineer-test — Claude Code Project Rules
+# forge-test — Claude Code Project Rules
 
 > Loaded into every Claude Code session in this repo. Override defaults; follow exactly.
 
@@ -8,7 +8,7 @@
 
 ## What this repo is
 
-A library of manual test scenarios for the qb-engineer ERP, plus a browser-based test runner that consumes the library.
+A library of manual test scenarios for the forge ERP, plus a browser-based test runner that consumes the library.
 
 - **Test scenarios** live in `docs/`. Markdown source with embedded YAML frontmatter for case structure. Authors edit; humans read.
 - **Test runner** lives in `test-bed/`. Angular SPA, IndexedDB-backed state, no server. The runner reads compiled JSON of the scenarios and walks testers through cases.
@@ -51,7 +51,7 @@ There is no server, no Docker, no database. The runner is a static SPA deployabl
 
 ## Critical constraints (always apply)
 
-- **No dependency on the application under test.** The runner does not call qb-engineer's API. It only walks the tester through cases; the tester does the actual interaction with the application.
+- **No dependency on the application under test.** The runner does not call forge's API. It only walks the tester through cases; the tester does the actual interaction with the application.
 - **Client-side only.** All state lives in the tester's browser via IndexedDB. No server, no auth, no sync (until and unless requirements demand it).
 - **Plain language in the UI itself.** The runner's audience ranges from inexperienced testers to senior IT staff. UI copy follows the same plain-language discipline as the cases — no jargon traps. See `docs/test-scenarios.md` §1.3.
 - **Industry-norm test framing.** Cases describe what *should* work. If the application can't do it, that's an application bug. The runner doesn't soften cases to fit the app. See `docs/test-scenarios.md` §1.1.

@@ -317,7 +317,7 @@ moot:
     Per Option A SO/Job unification (WU-18 locked decision), Job is the
     canonical work-execution entity and a stage transition replaces
     "release WO from SO". The case wording assumes Option B
-    architecture (separate WO entity created from SO). qb-engineer does
+    architecture (separate WO entity created from SO). forge does
     not have a "release WO from SO" endpoint by design.
   consultant_guidance: |
     WO release is a Job stage transition, not a separate endpoint. The
@@ -1221,7 +1221,7 @@ moot:
     GL postings under intentional accounting delegation. The standalone
     application has no GL surface; the QB-connected application
     delegates GL postings to QB. The pass criterion "GL postings correct"
-    is not directly observable inside qb-engineer in either mode.
+    is not directly observable inside forge in either mode.
   consultant_guidance: |
     Cash receipts post to AR via the customer payment-application
     surface (POST /payments). The GL cash debit / AR credit is recorded

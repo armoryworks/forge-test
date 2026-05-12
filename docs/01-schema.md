@@ -26,7 +26,7 @@ The author writes prose. Plain English steps. Multi-line notes. JSON makes that 
 |---|---|---|
 | `why_this_matters` | string | Plain-English business reason. Skipped by experienced testers, read by interns. Use sparingly — only on cases where the reason isn't obvious from the goal. |
 | `scale_tags` | list | Which business sizes this case applies to. Values: `small-shop`, `mid-market`, `enterprise`. If absent, the case applies to all. |
-| `capabilities` | list | Capability IDs (from `qb-engineer.api/Capabilities/CapabilityCatalog.cs`) the case actively demonstrates in its `steps:`. See "Capability tags" below for the binding convention. Sits between `scale_tags` and `preconditions` in source order. |
+| `capabilities` | list | Capability IDs (from `forge.api/Capabilities/CapabilityCatalog.cs`) the case actively demonstrates in its `steps:`. See "Capability tags" below for the binding convention. Sits between `scale_tags` and `preconditions` in source order. |
 | `modality` | list | Which input paths this case exercises. Values: `keyboard`, `touch`, `scanner`, `manual-entry`. Defaults to `keyboard`. Cases that only apply to a specific modality (scanner-specific behaviors) tag accordingly. |
 | `branches` | list | Branch declarations. See "Branching" below. |
 | `prerequisite_cases` | list | Other case IDs that must pass before this one can be attempted. Used by the runner for dependency tracking and the skip-ahead feature. |
@@ -104,7 +104,7 @@ A negative variant inherits the parent's preconditions and prior steps unless it
 
 ## Capability tags
 
-The `capabilities:` field cross-references each case to the application's authoritative capability catalog (`qb-engineer-server/qb-engineer.api/Capabilities/CapabilityCatalog.cs`). It enables offline coverage queries: which cases exercise which capabilities, and which capabilities have no case authored against them.
+The `capabilities:` field cross-references each case to the application's authoritative capability catalog (`forge-api/forge.api/Capabilities/CapabilityCatalog.cs`). It enables offline coverage queries: which cases exercise which capabilities, and which capabilities have no case authored against them.
 
 ### Binding convention
 
@@ -226,7 +226,7 @@ Stories live in `docs/stories.md` (or `docs/stories/{story-id}.md` when there ar
 id: lead-to-cash
 name: Lead to cash from an empty system
 description: |
-  The canonical end-to-end test of qb-engineer. Start with a brand-new
+  The canonical end-to-end test of forge. Start with a brand-new
   empty tenant and walk through every role's contribution to taking a
   customer from initial inquiry to cash applied.
 chapters:

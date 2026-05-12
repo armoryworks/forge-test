@@ -21,8 +21,8 @@ interface SessionCounts {
   template: `
     <main class="page">
       <section class="hero">
-        <div class="label-mono">qb-engineer · test bed</div>
-        <h1 class="hero-title">Manual test runs for the qb-engineer ERP.</h1>
+        <div class="label-mono">forge · test bed</div>
+        <h1 class="hero-title">Manual test runs for the forge ERP.</h1>
         <p class="hero-sub">
           Pick up a run you started earlier, or create a new one. Each run is
           stored in this browser only — close the tab and your progress will be

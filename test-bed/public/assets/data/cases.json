@@ -1143,7 +1143,7 @@
       "determined_at": "2026-04-28T00:00:00.000Z",
       "determined_by": "Phase 3 closeout / orchestrator-approved",
       "reason": "Payroll is delegated to the connected accounting/payroll provider.\nThe \"no payroll-impact\" pass criterion is unverifiable in either mode\n(standalone has no payroll module; QB-connected delegates payroll to QB).\n",
-      "consultant_guidance": "Reimbursements are recorded via /expenses (separate from payroll surfaces).\nAny payroll-side impact verification must be performed in the connected\naccounting/payroll provider — qb-engineer does not own the payroll-vs-expense\ncategory split.\n",
+      "consultant_guidance": "Reimbursements are recorded via /expenses (separate from payroll surfaces).\nAny payroll-side impact verification must be performed in the connected\naccounting/payroll provider — forge does not own the payroll-vs-expense\ncategory split.\n",
       "alternative_behavior": "/expenses POST records the reimbursement against the employee with the\nchosen expense category. Cash leg lives in the accounting provider.\n"
     }
   },
@@ -1775,8 +1775,8 @@
       "decision": "moot-by-design",
       "determined_at": "2026-04-28T00:00:00.000Z",
       "determined_by": "Phase 3 closeout / orchestrator-approved",
-      "reason": "Sales-tax-payable liability balance is GL territory. qb-engineer's\naccounting boundary delegates GL to the connected accounting provider.\nThe pass criterion (\"sales-tax-payable up by $7.25\") belongs in\nbuiltin-accounting-full-gl (not implemented; intentionally delegated).\n",
-      "consultant_guidance": "Tax computation is correct (subtotal+rate=total verified per invoice).\nThe liability accumulation lives in your accounting provider — confirm\nthe sales-tax-payable balance there, not in qb-engineer.\n",
+      "reason": "Sales-tax-payable liability balance is GL territory. forge's\naccounting boundary delegates GL to the connected accounting provider.\nThe pass criterion (\"sales-tax-payable up by $7.25\") belongs in\nbuiltin-accounting-full-gl (not implemented; intentionally delegated).\n",
+      "consultant_guidance": "Tax computation is correct (subtotal+rate=total verified per invoice).\nThe liability accumulation lives in your accounting provider — confirm\nthe sales-tax-payable balance there, not in forge.\n",
       "alternative_behavior": "Invoice records taxRate, taxAmount, and total. The accounting provider\nreceives the posted invoice via the sync queue and accumulates the\nliability balance on its own books.\n"
     }
   },
@@ -17223,7 +17223,7 @@
       "decision": "moot-by-design",
       "determined_at": "2026-04-28T00:00:00.000Z",
       "determined_by": "Phase 3 closeout / orchestrator-approved",
-      "reason": "GL postings under intentional accounting delegation. The standalone\napplication has no GL surface; the QB-connected application\ndelegates GL postings to QB. The pass criterion \"GL postings correct\"\nis not directly observable inside qb-engineer in either mode.\n",
+      "reason": "GL postings under intentional accounting delegation. The standalone\napplication has no GL surface; the QB-connected application\ndelegates GL postings to QB. The pass criterion \"GL postings correct\"\nis not directly observable inside forge in either mode.\n",
       "consultant_guidance": "Cash receipts post to AR via the customer payment-application\nsurface (POST /payments). The GL cash debit / AR credit is recorded\nin your accounting provider (QB/Xero/etc.); confirm it there. In\nstandalone mode you have an AR sub-ledger but no GL — same posture\nas the rest of accounting-bounded features per CLAUDE.md\n\"Accounting Boundary\".\n",
       "alternative_behavior": "POST /payments records the payment with applications across open\ninvoices; invoice balanceDue → 0 and status → Paid; customer AR\nsub-ledger updated. The contra-account GL leg is owned by the\nconnected accounting provider.\n"
     }
@@ -18580,7 +18580,7 @@
       "decision": "moot-by-design",
       "determined_at": "2026-04-28T00:00:00.000Z",
       "determined_by": "Phase 3 closeout / orchestrator-approved",
-      "reason": "Per Option A SO/Job unification (WU-18 locked decision), Job is the\ncanonical work-execution entity and a stage transition replaces\n\"release WO from SO\". The case wording assumes Option B\narchitecture (separate WO entity created from SO). qb-engineer does\nnot have a \"release WO from SO\" endpoint by design.\n",
+      "reason": "Per Option A SO/Job unification (WU-18 locked decision), Job is the\ncanonical work-execution entity and a stage transition replaces\n\"release WO from SO\". The case wording assumes Option B\narchitecture (separate WO entity created from SO). forge does\nnot have a \"release WO from SO\" endpoint by design.\n",
       "consultant_guidance": "WO release is a Job stage transition, not a separate endpoint. The\nSales Order is the same Job at the \"Order Confirmed\" stage; moving\nthe Job into a production-released stage performs the operation\nthis case targets. Use the Job stage-transition surface rather than\nlooking for a /release endpoint on Sales Order.\n",
       "alternative_behavior": "POST /jobs creates the Job (= SO + WO unified). Stage transitions\non the Job carry the work into production. BOM/routing snapshots at\nthe stage transition time supply the \"lock at release\" semantic.\n"
     }

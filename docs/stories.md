@@ -14,7 +14,7 @@ See [`01-schema.md`](01-schema.md#stories) for the field reference.
 id: lead-to-cash
 name: Lead to cash from an empty system
 description: |
-  The canonical end-to-end test of qb-engineer, and the narrative arc
+  The canonical end-to-end test of forge, and the narrative arc
   of the gold path's lead-to-cash spine. Start with a brand-new empty
   tenant and walk through every role's contribution to taking a
   customer from initial inquiry to cash applied. Each chapter marks a

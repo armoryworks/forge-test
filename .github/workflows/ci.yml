@@ -1,4 +1,4 @@
-# PR + push CI for qb-engineer-test
+# PR + push CI for forge-test
 #
 # Runs on: every PR into develop or main, every push to develop or main.
 # Steps: install, compile scenario content, build, unit tests (Vitest).

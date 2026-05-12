@@ -54,14 +54,14 @@ moot:
   determined_at: 2026-04-28
   determined_by: Phase 3 closeout / orchestrator-approved
   reason: |
-    Sales-tax-payable liability balance is GL territory. qb-engineer's
+    Sales-tax-payable liability balance is GL territory. forge's
     accounting boundary delegates GL to the connected accounting provider.
     The pass criterion ("sales-tax-payable up by $7.25") belongs in
     builtin-accounting-full-gl (not implemented; intentionally delegated).
   consultant_guidance: |
     Tax computation is correct (subtotal+rate=total verified per invoice).
     The liability accumulation lives in your accounting provider — confirm
-    the sales-tax-payable balance there, not in qb-engineer.
+    the sales-tax-payable balance there, not in forge.
   alternative_behavior: |
     Invoice records taxRate, taxAmount, and total. The accounting provider
     receives the posted invoice via the sync queue and accumulates the

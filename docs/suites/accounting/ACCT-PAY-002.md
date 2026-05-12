@@ -58,7 +58,7 @@ moot:
   consultant_guidance: |
     Reimbursements are recorded via /expenses (separate from payroll surfaces).
     Any payroll-side impact verification must be performed in the connected
-    accounting/payroll provider — qb-engineer does not own the payroll-vs-expense
+    accounting/payroll provider — forge does not own the payroll-vs-expense
     category split.
   alternative_behavior: |
     /expenses POST records the reimbursement against the employee with the

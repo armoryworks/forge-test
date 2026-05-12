@@ -1,6 +1,6 @@
 # Manual test scenario authoring — MRP/ERP gap closure
 
-> Hand this prompt verbatim to a fresh AI session that has no knowledge of the qb-engineer application. The deliberate ignorance is a feature: it keeps cases at the industry-standard level instead of coupling them to a specific UI or implementation.
+> Hand this prompt verbatim to a fresh AI session that has no knowledge of the forge application. The deliberate ignorance is a feature: it keeps cases at the industry-standard level instead of coupling them to a specific UI or implementation.
 
 ---
 
@@ -8,7 +8,7 @@ You are authoring manual test scenarios for an MRP/ERP system. **You have no dir
 
 ## Read this first
 
-The repo at `e:\dev\qb-engineer\qb-engineer-test\` is a manual test library plus a browser-based test runner. Before writing anything:
+The repo at `e:\dev\forge\forge-test\` is a manual test library plus a browser-based test runner. Before writing anything:
 
 1. `docs/test-scenarios.md` — philosophy and authoring conventions
 2. `docs/01-schema.md` — YAML schema for cases, manifests, flows, stories

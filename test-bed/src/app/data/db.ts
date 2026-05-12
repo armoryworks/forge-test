@@ -16,7 +16,7 @@ export class TestBedDb extends Dexie {
   tutorialResults!: Table<TutorialResult, string>;
 
   constructor() {
-    super('qb-engineer-test-bed');
+    super('forge-test-bed');
     this.version(1).stores({
       sessions: 'id, name, created_at, updated_at',
       results: 'id, session_id, case_id, status, [session_id+case_id]',

@@ -1,4 +1,4 @@
-# qb-engineer-test
+# forge-test
 
 User test scenarios for an ERP application, organized as a structured library that can be read directly or compiled to JSON for a runner.
 
