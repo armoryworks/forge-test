@@ -56,7 +56,7 @@ There is no server, no Docker, no database. The runner is a static SPA deployabl
 - **Plain language in the UI itself.** The runner's audience ranges from inexperienced testers to senior IT staff. UI copy follows the same plain-language discipline as the cases — no jargon traps. See `docs/test-scenarios.md` §1.3.
 - **Industry-norm test framing.** Cases describe what *should* work. If the application can't do it, that's an application bug. The runner doesn't soften cases to fit the app. See `docs/test-scenarios.md` §1.1.
 - **Generic visual identity.** No branding for any specific firm. Dark navy / teal accent palette is the baseline aesthetic.
-- **License is GPL v3.** Test scenario content and the runner are both GPL.
+- **License is Apache 2.0.** Test scenario content and the runner are both Apache 2.0.
 
 ## Working style preferences (Dan)
 
